@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muhammad Sohaib Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ecec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102222",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass-panel {
+                background: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(24px);
+                -webkit-backdrop-filter: blur(24px);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+            }
+            .glass-panel-light {
+                background: rgba(255, 255, 255, 0.02);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3);
+            }
+            .text-glow {
+                text-shadow: 0 0 30px rgba(19, 236, 236, 0.4);
+            }
+            .glass-card {
+                background: rgba(255, 255, 255, 0.03);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0a0f0f] text-white font-display overflow-x-hidden antialiased selection:bg-primary selection:text-[#111818]">
+<div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+<div class="absolute top-[-10%] left-[20%] w-[60vw] h-[60vw] bg-primary/10 rounded-full blur-[140px] opacity-40 mix-blend-screen"></div>
+<div class="absolute bottom-[10%] right-[-5%] w-[50vw] h-[50vw] bg-teal-800/20 rounded-full blur-[120px] opacity-30"></div>
+<div class="absolute top-[40%] left-[-10%] w-[40vw] h-[40vw] bg-blue-900/20 rounded-full blur-[100px] opacity-30"></div>
+</div>
+<header class="fixed top-0 w-full z-50 transition-all duration-300">
+<div class="mx-auto w-full px-4 sm:px-6 lg:px-8">
+<div class="glass-panel mt-6 rounded-2xl flex items-center justify-between px-6 py-4 max-w-6xl mx-auto border-white/10">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-gradient-to-br from-primary to-teal-600 flex items-center justify-center text-[#111818]">
+<span class="material-symbols-outlined text-[22px] font-bold">code</span>
+</div>
+<span class="font-bold text-xl tracking-tight">MS</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#approach">Approach</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#skills">Expertise</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary hover:bg-[#0fd6d6] text-[#111818] text-sm font-bold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-primary/20 hover:scale-105 active:scale-95">
+                    Connect
+                </button>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center w-full pt-44 pb-20 px-4 sm:px-6">
+<div class="w-full max-w-6xl flex flex-col gap-32">
+<section class="min-h-[60vh] flex flex-col items-center justify-center relative">
+<div class="glass-panel w-full max-w-5xl p-12 md:p-24 rounded-3xl flex flex-col items-center text-center relative overflow-hidden group border-white/10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none"></div>
+<div class="mb-8 px-4 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md text-xs font-bold text-primary tracking-[0.2em] uppercase">
+                        Website Developer
+                    </div>
+<h1 class="relative z-10 text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95] mb-8">
+                        Muhammad <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary/80 to-gray-500">Sohaib</span>
+</h1>
+<p class="relative z-10 text-lg md:text-2xl text-gray-400 max-w-2xl mb-12 leading-relaxed font-light">
+                        Architecting digital ecosystems with modern web technologies, performance-first logic, and sophisticated glassmorphic interfaces.
+                    </p>
+<div class="relative z-10 flex flex-wrap justify-center gap-6">
+<button class="bg-primary hover:bg-[#0fd6d6] text-[#111818] font-extrabold h-14 px-10 rounded-xl transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(19,236,236,0.4)]">
+                            View Portfolio
+                        </button>
+<button class="glass-panel-light hover:bg-white/10 text-white font-bold h-14 px-10 rounded-xl transition-all border border-white/20">
+                            Download CV
+                        </button>
+</div>
+</div>
+</section>
+<section id="projects">
+<div class="flex items-end justify-between mb-12 px-2">
+<div>
+<h2 class="text-4xl font-black tracking-tight mb-3">Engineered Solutions</h2>
+<p class="text-gray-400 text-lg">High-performance web applications and custom systems.</p>
+</div>
+<a class="hidden sm:flex items-center gap-2 text-primary hover:text-white transition-colors text-sm font-bold group" href="#">
+                        All Systems <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative bg-[#0f1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/40 transition-all duration-500 shadow-2xl">
+<div class="aspect-video w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKRaVarE6VpbnAq4Jw3RpWv9zuNe10ovjwRZPrc0lFoCJ7o7fbfTqDjzv57AiSN_Awc_krzKdMogY9wJt_qD5ihokSIx_A7CDIamXo7JNIgk6wMQLwLzrLNp5V1-C064bstSYAKPPF4-J858Hmi0GGmrXS6xGNWtxFJ55xqwJXOLiid_Kzee-VQC55KsEnloNcjSVTPtm8AOjArvDfZhQo_q7zAg2ahFUXp0G8rf2umckrnwAkZI81GWt5WlXmRpo2nOk8BGP8MHC9');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-white mb-2">Advanced Dashboards</h3>
+<p class="text-gray-400 text-base mb-6">Full-stack data visualization platforms with real-time analytics.</p>
+<div class="flex gap-3">
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">React</span>
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">Node.js</span>
+</div>
+</div>
+</div>
+<div class="group relative bg-[#0f1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/40 transition-all duration-500 shadow-2xl">
+<div class="aspect-video w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6UhpAl1HV4aug7oaKn_jx0XyhLuHM0OMj5DHtsFVfL8TxaF57FyxHqpgykpYd_CrU0WVY-KxjCUHE05bDFapjz7C4mzjW64FIEvHgBNgalFJLO9yxlSuaIg_3K-I7IaZwZZqJJrlu2S-_fYtp6f3fxtsgxpsmUYIsWrOywLJmyDUncnNuyqaYSSY12bb4G-vTe-yqN_fNmee-6Qcn7JTuLv8-HRCTAkbNtPOh_Zic0tIbQOoW8SRBPEH66puRXzp9r_zORgNzHSF6');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-white mb-2">E-Commerce Frameworks</h3>
+<p class="text-gray-400 text-base mb-6">Headless commerce solutions optimized for conversion and speed.</p>
+<div class="flex gap-3">
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">Next.js</span>
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">Tailwind</span>
+</div>
+</div>
+</div>
+<div class="group relative bg-[#0f1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/40 transition-all duration-500 shadow-2xl">
+<div class="aspect-video w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQDgZnASNrtClpLsj2f8LuU3h5pHUW2APyHWm7WX0PuygE-X1E9HuARy6nDjUh5LaKOan_zR9cHT8KWA5KL-ZDFgIRXFefJN2hLgrRjIjVS-_K95oI7_VfOSUpGo4rXU7u0xPp-oCiXrGx5HEdxB1CTYbrv8yp72DMjWcES2CgsNBEfpckN6ImY8LeaSc2qYBjlPjHGQ2NCyrX9d4tv77PUzBuGmtGLEBVf9-ekRUSaUned7-3XtpE2E4HP9EfoibrB_FWefWP76Me');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-white mb-2">FinTech Applications</h3>
+<p class="text-gray-400 text-base mb-6">Secure, scalable financial management tools with complex state handling.</p>
+<div class="flex gap-3">
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">TypeScript</span>
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">Web3</span>
+</div>
+</div>
+</div>
+<div class="group relative bg-[#0f1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/40 transition-all duration-500 shadow-2xl">
+<div class="aspect-video w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKA2uCxCysOkNecjdMnWqC3nx42Mu-gXQy-MpH0-xSRfSQZp7q2oOSvwL8LhWbhtHLI9W-CSTiSxwRd5yPQdXzN7aQwkvF8LTwZlz9a2S1jMtifspE1Qwoc1Uo_YHpqrHWsararLfMxT_IpVvrZb9-eVfQV5cODCC1rbEArSuieQKwSvreDGhq2z9agPoX_gymWhlSxDJuUtmz-hdJ9ueFNK3TybubkYoM4Lf4-Ka9yiYIaFswiU1gVYMAOpbg1qBrRf_pvEamGjHv');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-white mb-2">Interactive Portfolios</h3>
+<p class="text-gray-400 text-base mb-6">High-end creative websites with smooth motion and glassmorphic UI.</p>
+<div class="flex gap-3">
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">GSAP</span>
+<span class="px-3 py-1 bg-black/40 rounded-lg text-xs font-semibold text-primary border border-primary/20">Three.js</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="glass-panel rounded-3xl p-10 md:p-20 relative overflow-hidden border-white/10" id="approach">
+<div class="absolute right-0 top-0 w-2/3 h-full bg-gradient-to-l from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+<div class="max-w-md">
+<h2 class="text-4xl font-black mb-4">Development Philosophy</h2>
+<p class="text-gray-400 text-lg leading-relaxed">Clean code is the foundation, but exceptional user experience is the goal. I follow a rigorous methodology to ensure quality.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12">
+<div class="flex items-center gap-4 group">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">biotech</span>
+<span class="text-xl font-bold tracking-wide">Research</span>
+</div>
+<div class="flex items-center gap-4 group">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">architecture</span>
+<span class="text-xl font-bold tracking-wide">Structure</span>
+</div>
+<div class="flex items-center gap-4 group">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">auto_awesome</span>
+<span class="text-xl font-bold tracking-wide">Clarity</span>
+</div>
+<div class="flex items-center gap-4 group">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">all_inclusive</span>
+<span class="text-xl font-bold tracking-wide">Consistency</span>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-16 items-start" id="skills">
+<div class="md:col-span-1 sticky top-32">
+<h2 class="text-4xl font-black mb-6">Core Expertise</h2>
+<p class="text-gray-400 leading-relaxed text-lg mb-8">
+                        I specialize in building scalable, accessible, and performant web applications using a modern stack focused on the JavaScript ecosystem.
+                    </p>
+<a class="text-primary font-bold text-base hover:underline flex items-center gap-2 group" href="#">
+                        Technical Stack Details <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</a>
+</div>
+<div class="md:col-span-2">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="glass-card p-8 rounded-2xl border-white/10 hover:border-primary/30 transition-colors">
+<h3 class="text-white font-black text-xl mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">terminal</span> Frontend
+                            </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">React / Next.js</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Tailwind CSS</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">TypeScript</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Framer Motion</span>
+</div>
+</div>
+<div class="glass-card p-8 rounded-2xl border-white/10 hover:border-primary/30 transition-colors">
+<h3 class="text-white font-black text-xl mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">database</span> Backend
+                            </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Node.js</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">PostgreSQL</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">REST &amp; GraphQL</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Firebase</span>
+</div>
+</div>
+<div class="glass-card p-8 rounded-2xl border-white/10 hover:border-primary/30 transition-colors">
+<h3 class="text-white font-black text-xl mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">deployed_code</span> Operations
+                            </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">AWS / Vercel</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Docker</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">CI/CD Pipelines</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Git Flow</span>
+</div>
+</div>
+<div class="glass-card p-8 rounded-2xl border-white/10 hover:border-primary/30 transition-colors">
+<h3 class="text-white font-black text-xl mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">integration_instructions</span> Architecture
+                            </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Microservices</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">MVC Patterns</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Serverless</span>
+<span class="px-4 py-1.5 bg-white/5 rounded-full text-sm font-medium text-gray-300 border border-white/10">Modular Design</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="process">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-black mb-4">The Workflow</h2>
+<p class="text-gray-400 text-lg">A structured approach to project lifecycle</p>
+</div>
+<div class="max-w-4xl mx-auto px-4">
+<div class="relative space-y-16">
+<div class="flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="size-12 rounded-2xl glass-panel flex items-center justify-center border-primary/40 relative z-10">
+<span class="text-primary font-black">01</span>
+</div>
+<div class="w-px h-full bg-gradient-to-b from-primary/40 to-white/5 mt-4"></div>
+</div>
+<div class="pb-12">
+<h3 class="text-2xl font-black text-white mb-3">Discovery &amp; Analysis</h3>
+<p class="text-gray-400 text-lg leading-relaxed max-w-2xl">Requirement gathering, technical feasibility studies, and architectural planning to define the optimal tech stack.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="size-12 rounded-2xl glass-panel flex items-center justify-center border-white/10 relative z-10">
+<span class="text-white/60 font-black">02</span>
+</div>
+<div class="w-px h-full bg-white/10 mt-4"></div>
+</div>
+<div class="pb-12">
+<h3 class="text-2xl font-black text-white mb-3">System Architecture</h3>
+<p class="text-gray-400 text-lg leading-relaxed max-w-2xl">Designing database schemas, API structures, and state management flows for robust foundation.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="size-12 rounded-2xl glass-panel flex items-center justify-center border-white/10 relative z-10">
+<span class="text-white/60 font-black">03</span>
+</div>
+<div class="w-px h-full bg-white/10 mt-4"></div>
+</div>
+<div class="pb-12">
+<h3 class="text-2xl font-black text-white mb-3">Core Development</h3>
+<p class="text-gray-400 text-lg leading-relaxed max-w-2xl">Sprints of high-quality coding with continuous integration and comprehensive unit testing.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="size-12 rounded-2xl glass-panel flex items-center justify-center border-white/10 relative z-10">
+<span class="text-white/60 font-black">04</span>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-black text-white mb-3">Deployment &amp; QA</h3>
+<p class="text-gray-400 text-lg leading-relaxed max-w-2xl">Performance optimization, accessibility audits, and automated deployment to production environments.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="glass-panel rounded-3xl p-10 md:
